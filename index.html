@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Food Cost Calculator 🍽️💰</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Header Section -->
+<header class="header">
+    <div class="logo">
+        <h1>Food Cost Calculator 🍴</h1>
+    </div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#calculator">Calculator</a></li>
+            <li><a href="#faqs">FAQs</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <h2>Welcome to Your Restaurant's Food Cost Calculator 🍴💰</h2>
+    <p>Calculate the food cost of your dishes quickly and efficiently!</p>
+    <button class="cta-btn" onclick="scrollToCalculator()">Start Calculating Now!</button>
+</section>
+
+<!-- How It Works Section -->
+<section id="how-it-works" class="how-it-works">
+    <h2>How It Works</h2>
+    <ol>
+        <li>Enter the details of the ingredients in your dish 🍅🥬🍗</li>
+        <li>Input the quantity and price for each ingredient 💵</li>
+        <li>Click 'Calculate' to see your total cost per dish 📊</li>
+        <li>View cost per serving and suggested pricing 💡</li>
+    </ol>
+</section>
+
+<!-- Food Cost Calculator Tool Section -->
+<section id="calculator" class="calculator">
+    <h2>Food Cost Calculator Tool 🍽️</h2>
+    <form id="cost-form">
+        <label for="ingredient">Ingredient Name:</label>
+        <input type="text" id="ingredient" placeholder="e.g., Chicken" required>
+        
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" placeholder="e.g., 2" required>
+        
+        <label for="price">Price per Ingredient ($):</label>
+        <input type="number" id="price" placeholder="e.g., 5" required>
+        
+        <button type="button" onclick="addIngredient()">Add Ingredient</button>
+    </form>
+
+    <h3>Total Food Cost: $<span id="total-cost">0</span></h3>
+    <button class="cta-btn" onclick="calculateCost()">Calculate Food Cost</button>
+</section>
+
+<!-- FAQs Section -->
+<section id="faqs" class="faqs">
+    <h2>Frequently Asked Questions 🤔</h2>
+    <div class="faq">
+        <strong>How do I calculate food cost?</strong>
+        <p>Input the ingredients, their quantities, and prices, and our tool will calculate the total cost per dish.</p>
+    </div>
+    <div class="faq">
+        <strong>Can I save my calculations?</strong>
+        <p>Yes! You can save your calculations and create a list of your dishes.</p>
+    </div>
+    <div class="faq">
+        <strong>What is the ideal food cost percentage?</strong>
+        <p>Your food cost should be around 25-35% of the dish’s price.</p>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Your Name">
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Your Email">
+        
+        <label for="message">Message:</label>
+        <textarea id="message" placeholder="Your Message"></textarea>
+        
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <p>&copy; 2025 Restaurant Food Cost Calculator. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
